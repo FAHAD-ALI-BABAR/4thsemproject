@@ -4,29 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
+    
 </head>
 <body>
-    <form action="#" method="post" >
+    <form action="#" class="" method="post" >
       <div class="sign-up">
         <div class="f-name">
             <label for="fname">First Name</label>
-            <input type="text" name="fname" placeholder="Enter your first name..." required>
+            <input type="" id="fname" name="fname" pattern="[A-Za-z]+" placeholder="Enter your first name..." required>
         </div>
         <div class="l-name">
             <label for="lname">Last Name</label>
-            <input type="text" name="lname" placeholder="Enter your last name..." required>
+            <input type="text" id="lname" name="lname" pattern="[A-Za-z]+" placeholder="Enter your last name..." required>
         </div>
         <div class="email">
             <label for="email">Email</label>
-            <input type="email" name="email" placeholder="Enter your email..." required>
+            <input type="email" id="email" name="email" placeholder="Enter your email..." required>
         </div>
         <div class="pass">
             <label for="password">Password</label>
-            <input type="password" name="password" placeholder="Enter your Password..." >
+            <input type="password" id="password" name="password" placeholder="Enter your Password..." required>
         </div>
         <div class="c-pass">
             <label for="c-pass">Confirm Password</label>
-            <input type="password" name="c-pass" placeholder="Confirm your password..." >
+            <input type="password" id="c-pass" name="c-pass" placeholder="Confirm your password..." required >
         </div>
         <div class="gender">
             <label for="gender">Gender</label>
@@ -38,7 +39,7 @@
         </div>
       </div>
       <div class="button">
-            <input type="button" value="Sign Up">
+            <button type="submit" >Sign Up</button>
       </div>
    </form>
 </body>

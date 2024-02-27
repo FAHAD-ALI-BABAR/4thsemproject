@@ -8,6 +8,9 @@
         table,th,tr,td{
             border: 1px solid black;
         }
+        input:focus:invalid{
+            border: 1px solid red;
+        }
        
     </style>
 </head>
@@ -18,12 +21,12 @@
             <li><a href="./shop.html">Shop</a></li>
             <li><a href="./about.html">About Us</a></li>
             <li><a href="./contact.html">Contact</a></li>
-            <li><a href="./signupform.html">Sign Up</a></li>
-            <li><a href="./loginform.html">Log In</a></li>
+            <li><a href="./sign_up.html">Sign Up</a></li>
+            <li><a href="./login.html">Log In</a></li>
         </ul>
     </nav>
     <div class="e-image">
-        <img src="./e-img.gif.crdownload" alt="Animated GIF" id="gif">
+        <img src="../images/e-img.gif.crdownload" alt="Animated GIF" id="gif">
     </div>
 
     <div class="about-us">
@@ -72,15 +75,15 @@
             <form action="#" class="">
                 <div>
                     <label for="email" class="">Your email</label>
-                    <input type="email" id="email" class="" placeholder="name@flowbite.com" required>
+                    <input type="email" id="email" class="" placeholder="name@gmail.com" required>
                 </div>
                 <div>
                     <label for="subject" class="">Subject</label>
-                    <input type="text" id="subject" class="" placeholder="Let us know how we can help you" required>
+                    <input type="text" id="subject" name="subject" pattern="[A-Za-z]+" placeholder="Let us know how we can help you" required>
                 </div>
                 <div class="">
                     <label for="message" class="">Your message</label>
-                    <textarea id="message" rows="5" class="" placeholder="Leave a comment..."></textarea>
+                    <textarea id="message" rows="5" id="message" name="message" placeholder="Leave a comment..." required></textarea>
                 </div>
                 <button type="submit" class="">Send message</button>
             </form>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONTACT FORM</title>
+    
 </head>
 <body>
     <section class="">
@@ -13,15 +14,15 @@
             <form action="#" class="">
                 <div>
                     <label for="email" class="">Your email</label>
-                    <input type="email" id="email" class="" placeholder="name@flowbite.com" required>
+                    <input type="email" id="email" name ="email" placeholder="name@gmail.com" required>
                 </div>
                 <div>
                     <label for="subject" class="">Subject</label>
-                    <input type="text" id="subject" class="" placeholder="Let us know how we can help you" required>
+                    <input type="text" id="subject" name="subject" pattern="[A-Za-z]+" placeholder="Let us know how we can help you" required>
                 </div>
                 <div class="">
                     <label for="message" class="">Your message</label>
-                    <textarea id="message" rows="6" class="" placeholder="Leave a comment..."></textarea>
+                    <textarea id="message" rows="6" id="message" name="message" placeholder="Leave a comment..." required></textarea>
                 </div>
                 <button type="submit" class="">Send message</button>
             </form>
