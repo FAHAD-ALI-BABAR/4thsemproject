@@ -3,15 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheet/sign_up.css">
     <title>Sign Up</title>
+    <style>/*
+body {
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.sign-up{
     
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555555;
+    font-size: 16px;
+}
+input[type=email],input[type=text],
+input[type=password] {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    border: 0.1px solid #c77dff;
+}
+input[type=email]:focus,input[type=text]:focus,
+input[type=password]:focus {
+    border-color:#8B85C1;
+}
+input[type=email]:active,input[type=text]:active,
+input[type=password]:active {
+    border-color:#8B85C1;
+}
+input[type=submit] {
+    width: 95%;
+    padding: 15px;
+    background-color:#c77dff; /*cdb4db   c77dff*//*
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 5px;
+    
+}
+input[type=submit]:hover {
+    background-color: #9d4edd;
+}
+select {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    border: 0.1px solid #c77dff;
+}
+.permission-1 {
+    margin-top: 20px;
+    text-align: center;
+    color: #666666;
+    margin-top: 0px;
+}
+
+.permission-1 a {
+    color:#9d4edd;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.permission-1 a:hover {
+    text-decoration: underline;
+    color: #9d4edd;
+}
+*/
+
+</style>   
 </head>
 <body>
     <form action="#" class="" method="post" >
       <div class="sign-up">
         <div class="f-name">
             <label for="fname">First Name</label>
-            <input type="" id="fname" name="fname" pattern="[A-Za-z]+" placeholder="Enter your first name..." required>
+            <input type="text" id="fname" name="fname" pattern="[A-Za-z]+" placeholder="Enter your first name..." required>
         </div>
         <div class="l-name">
             <label for="lname">Last Name</label>
@@ -37,10 +127,14 @@
                 <option>Prefer not to say</option>
             </select>      
         </div>
+        <div class="button">
+            <input type="submit" value="Sign Up">
       </div>
-      <div class="button">
-            <button type="submit" >Sign Up</button>
       </div>
+      
+      <div class="permission-1">
+        <p>Already have an account?<a href="./login.html">Log in</a></p>
+    </div>
    </form>
 </body>
 </html>
