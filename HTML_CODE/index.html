@@ -9,21 +9,42 @@
         table,th,tr,td{
             border: 1px solid black;
         }
-        input:focus:invalid{
-            border: 1px solid red;
-        }
+       *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+       }
+       html,body{
+        height: 100%;
+        width: 100%;
+       }
+       nav {
+        display: flex;
+    }
+    ul{
+        padding: 20px;
+       
+        background-color: aqua;
+        justify-content: space-between;
+        
+    }
+    ul li{
+        
+    }
        
     </style>
 </head>
 <body>
     <nav>
+        <!--<img src="../images/Screenshot (15).png" alt="logo" style="height: 100px;width: 100px;">-->
         <ul>
+            <div>
             <li><a href="./home.html">Home</a></li>
             <li><a href="./shop.html">Shop</a></li>
             <li><a href="./about.html">About Us</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a href="./sign_up.html">Sign Up</a></li>
-            <li><a href="./login.html">Log In</a></li>
+            <li><a href="./contact.html">Contact</a></li></div>
+           <div> <li><a href="./sign_up.html">Sign Up</a></li>
+            <li><a href="./login.html">Log In</a></li></div>
         </ul>
     </nav>
     <div class="e-image">
