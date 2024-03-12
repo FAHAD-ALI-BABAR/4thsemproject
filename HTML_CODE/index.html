@@ -4,53 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="e-commerce website" content="">
+    <link rel="stylesheet" href="../stylesheet/navbar.css">
+    <link rel="stylesheet" href="../stylesheet/about.css">
     <title>Landing Page</title>
-    <style>
-        table,th,tr,td{
-            border: 1px solid black;
-        }
-       *{
-        padding: 0px;
-        margin: 0px;
-        box-sizing: border-box;
-       }
-       html,body{
-        height: 100%;
-        width: 100%;
-       }
-       nav {
-        display: flex;
-    }
-    ul{
-        padding: 20px;
-       
-        background-color: aqua;
-        justify-content: space-between;
-        
-    }
-    ul li{
-        
-    }
-       
+    <style>  
     </style>
 </head>
 <body>
-    <nav>
-        <!--<img src="../images/Screenshot (15).png" alt="logo" style="height: 100px;width: 100px;">-->
-        <ul>
-            <div>
-            <li><a href="./home.html">Home</a></li>
-            <li><a href="./shop.html">Shop</a></li>
-            <li><a href="./about.html">About Us</a></li>
-            <li><a href="./contact.html">Contact</a></li></div>
-           <div> <li><a href="./sign_up.html">Sign Up</a></li>
-            <li><a href="./login.html">Log In</a></li></div>
-        </ul>
-    </nav>
-    <div class="e-image">
-        <img src="../images/e-img.gif.crdownload" alt="Animated GIF" id="gif">
+    <div class="navbar">
+        <div class="logo">
+        <img style="width: 270px; height: 45px;" src="../images/logo.ai1.png" alt="logo">
+        </div>
+        <div class="nav-pages">
+           <ul class="pages">
+            <li class="child home"><a href="./home.html">HOME</a></li>
+            <li class="child shop"><a href="./shop.html">SHOP</a></li>
+            <li class="child about"><a href="./about.html">ABOUT</a></li>
+            <li class="child contact"><a href="./contact.html">CONTACT</a></li>
+            <li class="child search-bar">
+                <input type="text" id="text" name="text" autocomplete="additional-name" required placeholder="Search here...">
+                <button type="submit" >Search</button>
+            </li>
+           </ul>
+        </div>
+        <div class="nav-buttons">
+         <button class="butt login-button">LOGIN</button>
+         <button class="butt signup-button">SIGNUP</button>
+        </div>
     </div>
-
     <div class="about-us">
         <h1>About Us</h1>
         <h3>Our Team</h3>
