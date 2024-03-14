@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 body{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .navbar{
     display: flex;
@@ -10,9 +12,7 @@ body{
     border-top: transparent;
     border-left: transparent;
     border-right: transparent;
-    justify-content: space-between;  
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                                
+    justify-content: space-between;                             
 }
 .logo{
     margin-left: 5px;
@@ -24,7 +24,6 @@ body{
    
     width: 900px;
     margin-top: 2px;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
 .pages{
@@ -32,11 +31,9 @@ body{
     margin-top: 10px;
     width: 500px;
     justify-content:space-between;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .child{
     display: flex;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .nav-buttons{
     display: flex;
@@ -72,8 +69,6 @@ body{
     border-color: #9d4edd ;
     border-width: 2px;
     background-color: transparent;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
     
  }
  .login-button:hover{
@@ -90,7 +85,6 @@ body{
  }
 
 .signup-button{
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     cursor: pointer;
     margin-right: 10px;
     margin-top: 7px;
@@ -126,7 +120,8 @@ body{
    width: 220px;
    position: absolute;
   left: 65%;
-  height: 17px;}
+  height: 27px;
+}
 
   .search-bar input:hover {
    padding: 6px;
@@ -136,7 +131,7 @@ body{
    width: 220px;
    position: absolute;
   left: 65%;
-  height: 17px;
+  height: 27px;
   transition: 0.5s;
 }
   
@@ -164,12 +159,11 @@ transition: 0.5s;
 input[type="text"]:focus{
      color: white;
      border:#A770EF ;
-     background-color: #A770EF;
+     background-color: #fff;
 }
 a{
   color: #212121;
   text-decoration: none;
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
 }
 a:hover{
     color: #A770EF ;
