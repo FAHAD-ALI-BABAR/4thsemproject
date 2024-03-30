@@ -8,9 +8,12 @@ body{
 	margin:0;
 	padding:0;
 	box-sizing: border-box;
+  
+
     
 }
 .container{
+
 	max-width: 1170px;
 	margin:auto;
 }
@@ -22,7 +25,11 @@ ul{
 	list-style: none;
 }
 .footer{
-	background-color: #020617;
+	background-color: #fff;
+  border:1px solid black;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: transparent;
   opacity: 0.9;
     padding: 70px 0;
 }
