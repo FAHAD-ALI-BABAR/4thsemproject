@@ -11,6 +11,121 @@
   <link rel="stylesheet" href="../stylesheet/hero_section.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing:border-box;
+    }
+    .square{
+        position: relative;
+        height: 50vh;
+        width: 100%;
+        background-color: #c77dff;
+    }
+    .glass-container{
+        border:rgba(255,255,255,0.40);
+        background-color: rgba(255,255,255,0.25);
+        position: absolute;
+       height: 30vh;
+       width: 70%;
+       top: 20%;
+       left: 20%;
+       border-radius: 15px;
+    }
+    .glass-container .heading{
+        text-align: center;
+        padding:20px;
+       font-size: 15px;
+    }
+    .glass-container .brands{
+        
+        padding: 24px;
+        margin-left: 20px;
+        display: grid;
+        grid-template-columns: 180px 180px 180px 180px 180px;
+        grid-template-rows: 70px 70px;
+       grid-column-gap: 100px;
+       grid-row-gap: 20px;
+    }
+    .bg-circles div{
+    position: absolute;
+    border-radius: 50%;
+}
+.bg-circles .circle-1{
+    height: 70px;
+    width: 70px;
+    background-color: #0000ff;
+    left: 5%;
+    top: 10%;
+    opacity: 0.3;
+    animation: zoomInOut 8s linear infinite;
+}
+.bg-circles .circle-2{
+    height:80px;
+    width: 80px;
+    background-color: #ffffff;
+    right: 90px;
+    top: 70%;
+    opacity: 0.4;
+    animation: bounceright 5s ease-in-out infinite;
+}
+.bg-circles .circle-3{
+    height:90px;
+    width: 90px;
+    background-color:  #e02f6b;
+    left: 30%;
+    top: 70%;
+    opacity: 0.6;
+    animation: bounceTop 5s ease-in-out infinite;
+   
+}
+.bg-circles .circle-4{
+    height:70px;
+    width: 70px;
+    background-color: #ffa500;
+    left: 140px;
+    top: 80%;
+    opacity: 0.4;
+    animation: bounceright 10s ease-in-out infinite;
+    
+}
+.bg-circles .circle-5{
+    height:90px;
+    width: 90px;
+    background-color:  #9d4edd;
+    right: 8%;
+    top: 14%;
+    opacity: 0.6;
+    animation: zoomInOut 5s ease-in-out infinite;
+   
+}
+
+@keyframes bounceTop{
+
+0%,100%{
+    transform: translateY(-50px);
+}
+50%{
+    transform: translateY(0px);
+}
+}
+@keyframes bounceright{
+0%,100%{
+    transform: translateX(-50px);
+}
+50%{
+    transform: translateX(0px);
+}
+}
+
+@keyframes zoomInOut{
+    0%,100%{
+       transform: scale(0.5);
+    }
+    50%{
+        transform: scale(1);
+    }
+}
   </style>
 </head>
 <body>
@@ -49,7 +164,7 @@
                         out!</p>
                 </div>
                 <div class="hero-button">
-                    <button class="shop-now">Shop Now</button>
+                    <button class="shop-now"><a style="color: white; text-decoration: none;" href="../HTML_CODE/sign_up.html">Shop Now</a></button>
                  <button class="learn">Learn More</button>
                 </div>
         </div>
@@ -59,69 +174,40 @@
                  </div>
     </div>
 <!--hero section ends here-->
-    <div class="about-us">
-        <h1>About Us</h1>
-        <h3>Our Team</h3>
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Role</th>
-            </tr>
-            <tr>
-                <td>Tayyab</td>
-                <td>Example@gmail.com</td>
-                <td>SDE</td>
-            </tr>
-            <tr>
-                <td>Arsal</td>
-                <td>Example@gmail.com</td>
-                <td>SDE</td>
-            </tr>
-            <tr>
-                <td>Ahsan</td>
-                <td>Example@gmail.com</td>
-                <td>SQA</td>
-            </tr>
-            <tr>
-                <td>Salman</td>
-                <td>Example@gmail.com</td>
-                <td>PM</td>
-            </tr>
-            <tr>
-                <td>Asim</td>
-                <td>Example@gmail.com</td>
-                <td>HR</td>
-            </tr>
-        </table>
-    </div>
-    <div class="Contact">
-        <h1>Contact</h1>
-    </div>
-    <section class="">
-        <div class="">
-            <h3 class="">Contact Us</h3>
-            <p class="">"Experiencing any technical hiccups? Have thoughts to share about a beta feature? Interested in our Business plan perks? We're here to assist, just drop us a message!"</p>
-            <form action="#" class="">
-                <div>
-                    <label for="email" class="">Your email</label>
-                    <input type="email" id="email" class="" placeholder="name@gmail.com" required>
-                </div>
-                <div>
-                    <label for="subject" class="">Subject</label>
-                    <input type="text" id="subject" name="subject" pattern="[A-Za-z]+" placeholder="Let us know how we can help you" required>
-                </div>
-                <div class="">
-                    <label for="message" class="">Your message</label>
-                    <textarea id="message" rows="5" id="message" name="message" placeholder="Leave a comment..." required></textarea>
-                </div>
-                <button type="submit" class="">Send message</button>
-            </form>
+   
+<!--bubbles and branding section starts here-->
+<div class="square">
+    <div class="glass-container">
+        <div class="heading">
+            <h3>Trusted by partners and brands:</h3>
         </div>
-      </section>
-    <div class="Shop">
-        <h1>About Us</h1>
+        <div class="brands">
+            <img class="images" src="../images/ashley.svg" alt="">
+            <img class="images" src="../images/fatboy.svg" alt="">
+            <img class="images" src="../images/google.svg" alt="">
+            <img class="images" src="../images/lowes.svg" alt="">
+            <img class="images" src="../images/made.svg" alt="">
+            <img class="images" src="../images/meta.svg" alt="">
+            <img class="images" src="../images/nvidia.svg" alt="">
+            <img class="images" src="../images/puma.svg" alt="">
+            <img class="images" src="../images/shopify.svg" alt="">
+            <img class="images" src="../images/staples.svg" alt="">
+        </div>
     </div>
+    <div class="bg-circles">
+        <div class="circle-1"></div>
+        <div class="circle-2"></div>
+        <div class="circle-3"></div>
+        <div class="circle-4"></div>
+        <div class="circle-5"></div>
+        <div class="circle-6"></div>
+    </div>
+
+</div>
+
+<!--branding ends here-->
+
+
 <footer class="footer">
   	 <div class="container">
   	 	<div class="row">
@@ -160,6 +246,7 @@
   	 				<a href="#"><i class="fab fa-twitter"></i></a>
   	 				<a href="#"><i class="fab fa-instagram"></i></a>
   	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+
   	 			</div>
   	 		</div>
   	 	</div>

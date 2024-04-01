@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .parent{
+            position: relative;
+            border: 1px solid red;
+            height:50vh;
+            width: 100%;
+        }
+        .card{
+            position: absolute;
+            border: 1px solid yellow;
+            width: 100%;
+        }
+        .box h1{
+            text-align: center;
+            font-size: 42px;
+        }
+        .card .brands{
+            border: 1px solid green;
+            display: grid;
+            grid-template-columns: 190px 190px 190px 190px 190px;
+            grid-template-rows: 60px 60px;
+            padding: 30px;
+            margin-left: 30%;
+           
+        }
+         img{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="card">
+        <div class="box">
+            <h1>Truested</h1>
+        </div>
+        <div class="brands">
+            <img src="../images/ashley.svg" alt="">
+            <img src="../images/fatboy.svg" alt="">
+            <img src="../images/google.svg" alt="">
+            <img src="../images/lowes.svg" alt="">
+            <img src="../images/made.svg" alt="">
+            <img src="../images/meta.svg" alt="">
+            <img src="../images/nvidia.svg" alt="">
+            <img src="../images/puma.svg" alt="">
+            <img src="../images/shopify.svg" alt="">
+            <img src="../images/staples.svg" alt="">
+        </div>
+        </div>
+    </div>
+</body>
+</html>
